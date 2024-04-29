@@ -1,0 +1,1 @@
+Se modifica el codigo proporcionado por los profesores para usar el sensor DHT11, este se conecta a un canal de thingspeak, y usando el sensor, recopila datos sobre la temperatura y la humedad en el ambiente, las pruebas fueron exitosas
