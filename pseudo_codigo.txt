@@ -1,0 +1,32 @@
+variables:
+pr = distancia desde el sensor a la pared
+d1 = distancia detectada por el sensor entrada
+d2 = distancia detectada por el sensor salida
+temp = temperatura del salon
+cant_sillas = cantidad de sillas del salon
+cant_personas = cantidad de personas en el salon
+
+al inicio
+establecer pr, cant_sillas, cant_personas = 0, iteracion=0, verificar d1 = d2 = pr, detectar temp
+
+repetir{
+si(iteracion>=20){
+	si(temp>26){
+		(idea: usar un servo motor para levantar la cortina, y permitir el paso de energia a un ventilador usb)
+	}
+	si(temp<20&&ventilador_prendido){
+		(cerrar cortina&&apagar ventilador)
+	}
+	iteracion=0
+}
+sino{
+	iteracion++
+}
+si (d1<pr) {
+	cant_personas++	
+}
+si (d2<pr){
+	cant_personas--
+}
+delay(0.25s)
+}
