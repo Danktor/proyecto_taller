@@ -1,1 +1,0 @@
-Se probo a usar 2 sensores de distancia (HC-SR04) y un sensor de temperatura/humedad (DHT11) al mismo tiempo, las pruebas fueron exitosas, el siguiente prototipo se usara este codigo modificado de forma que, detecte el paso de un objeto, recopile temperatura/humedad, y envie estos datos a la plataforma thingspeak
